@@ -31,7 +31,6 @@ else
     Console.WriteLine("Or the first number is not equal to the second number");   
 }
 }
-*/
 
 int counter = 0;
 do
@@ -40,7 +39,33 @@ do
     counter++;
 } while (counter < 10);
 
-for (int index = 0; index < 10; index++)
+*/
+
+
+// for (int index = 0; index < 10; index++)
+// {
+//    Console.WriteLine($"Hello World! The index is {index}");
+// }
+
+/*
+
+for (int row = 1; row < 11; row++)
 {
-    Console.WriteLine($"Hello World! The index is {index}");
+    Console.WriteLine($"The row is {row}");
+}
+
+for (int column = 'a'; column < 'k'; column++)
+{
+    Console.WriteLine($"The column in {column}");
+}
+
+*/
+
+
+for (int row = 1; row < 11; row++)
+{
+    for (char column = 'a'; column < 'k'; column++)
+    {
+        Console.WriteLine($"The cell is ({row}, {column})");
+    }
 }
